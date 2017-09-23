@@ -60,7 +60,7 @@ gulp.task('html', function(){
 
 
 //main watch command
-gulp.task('g', ['html', 'sass', 'common-js', 'scripts', 'start-server'], function(){
+gulp.task('default', ['html', 'sass', 'common-js', 'scripts', 'start-server'], function(){
     gulp.watch('app/sass/**/*.sass', ['sass']);
     gulp.watch('app/js/**/*.js', ['common-js', 'scripts']);
     gulp.watch('app/**/*.html', ['html', browserSync.reload]);
