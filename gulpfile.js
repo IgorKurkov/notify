@@ -8,7 +8,10 @@ var gulp           = require('gulp'),
     plumber        = require('gulp-plumber'),
     concat         = require('gulp-concat'),
     uglify         = require('gulp-uglify'),
-    fileinclude    = require('gulp-file-include');
+    fileinclude    = require('gulp-file-include'),
+    imagemin       = require('gulp-imagemin'),
+    del            = require('del'),
+    cache          = require('gulp-cache');
 
 //start server
 gulp.task('start-server', function(){
@@ -56,6 +59,36 @@ gulp.task('html', function(){
         }))
         .pipe(gulp.dest('app'))
         .pipe(browserSync.reload({stream: true}));
+});
+gulp.task('imagemin', () => {
+    return gulp.src('app/assets/**/*')
+    .pipe(cache(imagemin()))
+	.pipe(gulp.dest('dist/assets')); 
+});
+gulp.task('deldist', function() { return del.sync('dist'); });
+gulp.task('clearcache', function () { return cache.clearAll(); });
+
+gulp.task('build', ['deldist', 'imagemin', 'sass', 'html', 'common-js', 'scripts'], () => {
+    var buildHtml = gulp.src([
+        'app/*.html', 
+        'app/.htaccess'
+        ])
+        .pipe(gulp.dest('dist'));
+
+    var buildCss = gulp.src([
+        'app/css/*.css'
+        ])
+        .pipe(gulp.dest('dist/css'));
+
+    var buildJs = gulp.src([
+        'app/js/*.js'
+        ])
+        .pipe(gulp.dest('dist/js'));
+
+    var buildFonts = gulp.src([
+        'app/fonts/**/*'
+        ])
+        .pipe(gulp.dest('dist/fonts'));
 });
 
 
