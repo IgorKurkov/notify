@@ -1,0 +1,62 @@
+.testimonials
+  text-align: center
+  &-post 
+    margin-top: 40px
+    blockquote
+      width: 80%
+      margin: 0 auto
+      font-size: 18px
+      font-family: 'helveticaneue'
+    .testimonials-post--name
+      font: bold 18px 'raleway' 
+      color: #000000 
+      margin: 20px 0 35px 0
+  &-carousel
+    height: 50px
+    width: 100%
+    overflow: hidden
+    margin: 0 auto
+    .reviewer-img
+      float: left
+      margin-right: 5px
+      &:hover
+        filter: hue-rotate(100deg)
+  .carousel-container
+    width: 1500px
+
+.social
+  text-align: center
+  &-slogan
+    margin-top: 20px
+    font: 600 24px 'raleway'
+    color: #000000
+    p 
+      font: 16px 'helveticaneue'
+
+  .social-buttons
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0 auto
+    padding: 20px
+
+
+    .social-buttons--item
+      display: block
+      @include green-circle-style(35px) 
+      background-color: $second-color
+      float: left
+      svg 
+        width: 60%
+        height: 60%
+        fill: #ffffff
+        margin: 20%
+
+      .twitter-icon
+      .facebook-icon
+      .pinterest-icon
+      .google-icon
+      .linkedin-icon
+      .youtube-icon
+      
+

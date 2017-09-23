@@ -1,0 +1,52 @@
+.features
+
+  .feature-item
+    padding: 50px 10px 30px
+    text-align: center
+
+
+    [class*='feature-image']
+      @include green-circle-style(100px)
+      background-color: $accent-color
+      margin: 0 auto
+      position: relative
+      transition: ease .3s
+      svg
+        position: absolute
+        top: 28%
+      &:hover
+        transform: scale(1.3) rotate(360deg) 
+
+    .feature-image--editable svg
+      left: 29%
+    .feature-image--flat svg
+      top: 26%
+      left: 26%
+    .feature-image--audience svg
+      left: 27%
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
