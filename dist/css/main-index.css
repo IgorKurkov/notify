@@ -1,0 +1,321 @@
+@font-face {
+  font-family: "helveticaneue";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/helveticaneue/HelveticaNeue.eot");
+  src: url("../fonts/helveticaneue/HelveticaNeue.eot?#iefix") format("embedded-opentype"), url("../fonts/helveticaneue/HelveticaNeue.woff") format("woff"), url("../fonts/helveticaneue/HelveticaNeue.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "pasifico";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/pasifico/pacificoregular.eot");
+  src: url("../fonts/pasifico/pacificoregular.eot?#iefix") format("embedded-opentype"), url("../fonts/pasifico/pacificoregular.woff") format("woff"), url("../fonts/pasifico/pacificoregular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "ralewaysemibold";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/ralewaysemibold/ralewaysemibold.eot");
+  src: url("../fonts/ralewaysemibold/ralewaysemibold.eot?#iefix") format("embedded-opentype"), url("../fonts/ralewaysemibold/ralewaysemibold.woff") format("woff"), url("../fonts/ralewaysemibold/ralewaysemibold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "helveticaneue";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/helveticaneue/HelveticaNeue.eot");
+  src: url("../fonts/helveticaneue/HelveticaNeue.eot?#iefix") format("embedded-opentype"), url("../fonts/helveticaneue/HelveticaNeue.woff") format("woff"), url("../fonts/helveticaneue/HelveticaNeue.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "pasifico";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/pasifico/pacificoregular.eot");
+  src: url("../fonts/pasifico/pacificoregular.eot?#iefix") format("embedded-opentype"), url("../fonts/pasifico/pacificoregular.woff") format("woff"), url("../fonts/pasifico/pacificoregular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "ralewaysemibold";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/ralewaysemibold/ralewaysemibold.eot");
+  src: url("../fonts/ralewaysemibold/ralewaysemibold.eot?#iefix") format("embedded-opentype"), url("../fonts/ralewaysemibold/ralewaysemibold.woff") format("woff"), url("../fonts/ralewaysemibold/ralewaysemibold.ttf") format("truetype"); }
+
+.row-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  position: relative; }
+
+[class*='grid'] {
+  padding: 20px;
+  position: relative;
+  height: 100%; }
+
+.grid-1 {
+  width: 6.66%; }
+
+.grid-2 {
+  flex-grow: 2; }
+
+.grid-3 {
+  width: 20%; }
+
+.grid-4 {
+  width: 26.66%; }
+
+.grid-5 {
+  width: 33.33%; }
+
+.grid-6 {
+  width: 40%; }
+
+.grid-7 {
+  width: 46.66%; }
+
+.grid-15 {
+  width: 100%; }
+
+.main-header {
+  color: #FFFFFF;
+  position: relative; }
+  .main-header .row-container {
+    height: 600px;
+    padding: 0 30px 0 30px; }
+  .main-header .main-info .site-name {
+    margin-top: 140px;
+    font-size: 60px;
+    color: #FFFFFF;
+    font-family: 'pasifico'; }
+    .main-header .main-info .site-name--dot {
+      color: #2ECC71; }
+  .main-header .main-info .site-description p {
+    font-size: 20px; }
+  .main-header [class*='header-icon'] {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    position: relative;
+    position: relative;
+    display: block;
+    float: left;
+    background: #000;
+    opacity: .5;
+    margin-right: 16px; }
+    .main-header [class*='header-icon']:hover {
+      background-color: #2ECC71;
+      opacity: 1; }
+  .main-header svg {
+    position: absolute;
+    width: 45%;
+    height: 45%;
+    margin: 26.66%; }
+    .main-header svg polygon {
+      fill: #fff; }
+    .main-header svg path {
+      fill: #fff !important; }
+
+.features .feature-item {
+  padding: 50px 10px 30px;
+  text-align: center; }
+  .features .feature-item [class*='feature-image'] {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+    background-color: #2ECC71;
+    margin: 0 auto;
+    position: relative;
+    transition: ease .3s; }
+    .features .feature-item [class*='feature-image']:hover {
+      background-color: #2ECC71;
+      opacity: 1; }
+    .features .feature-item [class*='feature-image'] svg {
+      position: absolute;
+      top: 28%; }
+    .features .feature-item [class*='feature-image']:hover {
+      transform: scale(1.3) rotate(360deg); }
+  .features .feature-item .feature-image--editable svg {
+    left: 29%; }
+  .features .feature-item .feature-image--flat svg {
+    top: 26%;
+    left: 26%; }
+  .features .feature-item .feature-image--audience svg {
+    left: 27%; }
+
+.notified {
+  padding: 50px 0px;
+  /* responsive iframe */ }
+  .notified h3 {
+    display: inline; }
+  .notified .subscribe-mail {
+    font-family: 'helveticaneue';
+    font-size: 16px;
+    padding-left: 20px;
+    height: 55px;
+    border: 1px solid #cccccc;
+    border-radius: 15px 0 0 15px;
+    float: left;
+    width: 300px; }
+  .notified .subscribe-button {
+    background-color: #2ECC71;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.3em;
+    font-weight: 600;
+    font-family: 'raleway';
+    user-select: none;
+    padding: 17px 30px;
+    border: none;
+    float: left;
+    border-radius: 0 15px 15px 0; }
+    .notified .subscribe-button:hover {
+      background-color: #40eb88; }
+    .notified .subscribe-button:active {
+      background-color: #209150; }
+  .notified .media-embed {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    padding-right: 10px; }
+    .notified .media-embed iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 4px solid #000;
+      border-radius: 15px;
+      overflow: hidden; }
+      .notified .media-embed iframe html .headers {
+        display: none; }
+
+.testimonials {
+  text-align: center; }
+  .testimonials-post {
+    margin-top: 40px; }
+    .testimonials-post blockquote {
+      width: 80%;
+      margin: 0 auto;
+      font-size: 18px;
+      font-family: 'helveticaneue'; }
+    .testimonials-post .testimonials-post--name {
+      font: bold 18px 'raleway';
+      color: #000000;
+      margin: 20px 0 35px 0; }
+  .testimonials-carousel {
+    height: 50px;
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto; }
+    .testimonials-carousel .reviewer-img {
+      float: left;
+      margin-right: 5px; }
+      .testimonials-carousel .reviewer-img:hover {
+        filter: hue-rotate(100deg); }
+  .testimonials .carousel-container {
+    width: 1500px; }
+
+.social {
+  text-align: center; }
+  .social-slogan {
+    margin-top: 20px;
+    font: 600 24px 'raleway';
+    color: #000000; }
+    .social-slogan p {
+      font: 16px 'helveticaneue'; }
+  .social .social-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 20px; }
+    .social .social-buttons .social-buttons--item {
+      display: block;
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      position: relative;
+      background-color: #E3E3E3;
+      float: left; }
+      .social .social-buttons .social-buttons--item:hover {
+        background-color: #2ECC71;
+        opacity: 1; }
+      .social .social-buttons .social-buttons--item svg {
+        width: 60%;
+        height: 60%;
+        fill: #ffffff;
+        margin: 20%; }
+
+.footer {
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto; }
+  .footer .bottom-menu li {
+    list-style-type: none;
+    display: inline-block; }
+  .footer .bottom-menu a {
+    text-decoration: none;
+    margin: 15px;
+    color: #848484; }
+    .footer .bottom-menu a:hover {
+      color: #222222; }
+
+body {
+  background-color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+  font-family: "helveticaneue";
+  font-size: 16px;
+  line-height: 1.7em;
+  color: #848484;
+  border-top: 12px solid #2ECC71; }
+  body .container {
+    width: 80%;
+    position: relative;
+    margin: 0 auto; }
+  body .bg-jumbotron {
+    background: #7C4E35 url("../assets/jumbotron.png");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 20vh; }
+  body .bg-content {
+    background-color: #E3E3E3;
+    width: 100%; }
+  body .bg-footer {
+    background-color: #E3E3E3; }
+  body h3 {
+    color: #222222;
+    font-family: 'ralewaysemibold';
+    text-transform: capitalize; }
+
+@font-face {
+  font-family: "helveticaneue";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/helveticaneue/HelveticaNeue.eot");
+  src: url("../fonts/helveticaneue/HelveticaNeue.eot?#iefix") format("embedded-opentype"), url("../fonts/helveticaneue/HelveticaNeue.woff") format("woff"), url("../fonts/helveticaneue/HelveticaNeue.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "pasifico";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/pasifico/pacificoregular.eot");
+  src: url("../fonts/pasifico/pacificoregular.eot?#iefix") format("embedded-opentype"), url("../fonts/pasifico/pacificoregular.woff") format("woff"), url("../fonts/pasifico/pacificoregular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "ralewaysemibold";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/ralewaysemibold/ralewaysemibold.eot");
+  src: url("../fonts/ralewaysemibold/ralewaysemibold.eot?#iefix") format("embedded-opentype"), url("../fonts/ralewaysemibold/ralewaysemibold.woff") format("woff"), url("../fonts/ralewaysemibold/ralewaysemibold.ttf") format("truetype"); }
+
+@media only screen and (max-width: 1199px) {
+  .notified .subscribe-mail {
+    width: 240px; } }
+
+@media only screen and (max-width: 1024px) {
+  .notified .subscribe-mail {
+    width: 200px; } }
